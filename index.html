@@ -19,15 +19,19 @@
     <div class="container">
         <br>
         <h1>Form Validation</h1>
-        <form>
+        <form name="myForm">
+            <span class="errorMessage"></span>
             <div class="form-row">
                 <div class="form-group col-md-6">
-                    <label for="validationCustom01">First Name</label>
-                    <input type="text" class="form-control needs-validation" id="validationCustom01" placeholder="Mel">
+                    <label for="firstName">First Name</label>
+                    <input type="text" name="fname" class="form-control needs-validation" id="inputfirstName"
+                        placeholder="Mel">
+                    <span class="nameError"></span>
                 </div>
                 <div class=" form-group col-md-6">
                     <label for="lastName">Last Name</label>
                     <input type="text" class="form-control" id="inputLastName" placeholder="C">
+                    <span class="nameError"></span>
                 </div>
             </div>
 
@@ -35,6 +39,7 @@
                 <div class="form-group col-md-6">
                     <label for="inputEmail">Email</label>
                     <input type="email" class="form-control" id="inputEmail" placeholder="mel@email.com">
+                    <span class=""></span>
                 </div>
             </div>
 

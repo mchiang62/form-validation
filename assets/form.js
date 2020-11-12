@@ -2,17 +2,32 @@ $(document).ready(function () {
 
     document.getElementById('myButton').onclick = function validateForm(event) {
         event.preventDefault();
-        const x = document.forms["myForm"]["fname"].value;
-        if (x.length < 2) {
+        const firstName = document.forms["myForm"]["fname"].value;
+        if (firstName.length < 2) {
             showErrorMsg()
-            $("#fnameError").html(
+            $("#fNameError").html(
                 "Minimum characters 2"
             );
-        } else if (x.length >= 2) {
+        } else if (firstName.length >= 2) {
             showNoMsg()
-            $("#fnameError").empty()
+            $("#fNameError").empty()
 
         }
+
+        const lastName = document.forms["myForm"]["lname"].value;
+        if (lastName.length < 2) {
+            showErrorMsg()
+            $("#lNameError").html(
+                "Minimum characters 2"
+            );
+        } else if (lastName.length >= 2) {
+            showNoMsg()
+            $("#lNameError").empty()
+
+        }
+
+
+
 
     }
 

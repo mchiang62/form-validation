@@ -6,14 +6,17 @@ body {
     color: red;
 }
 
-.nameError {
+#lNameError {
+    color: red;
+}
+
+#fNameError {
     color: red;
 }
 
 #message {
     color: red;
 }
-
 
 /* input:invalid {
     border: 2px dashed red;

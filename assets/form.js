@@ -23,10 +23,14 @@ $(document).ready(function () {
         } else if (lastName.length >= 2) {
             showNoMsg()
             $("#lNameError").empty()
-
         }
 
 
+        const email = document.forms["myForm"]["emailInput"].value;
+
+        if (!/@/.test(email)) {
+            showErrorMsg()
+        }
 
 
     }
@@ -43,7 +47,6 @@ $(document).ready(function () {
             ""
         );
     }
-
 
     function displayConfirmation() {
         event.preventDefault();
